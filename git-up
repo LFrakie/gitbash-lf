@@ -8,10 +8,11 @@ read varcommit
 
 #echo It\'s nice to meet you $varcommit
 
-git commit -m $varcommit
+git commit -m "{$varcommit}"
 
 echo "Branch: "
 
-git push -u origin 
+read varbranch
+git push -u origin $varbranch 
 
 #git add . && git commit -m "test up gitupbash" && git push -u origin 
