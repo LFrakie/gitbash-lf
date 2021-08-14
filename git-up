@@ -1,12 +1,11 @@
 #!/bin/bash
+echo ""
 
 echo "=============================="
 echo -e "\e[0;32m Agregando todos los cambios \e[0m"
 echo "=============================="
 
 git add .
-
-echo ""
 
 echo -e "\033[37;44m Agregar Commit: \033[0m"
 read varcommit
@@ -17,3 +16,5 @@ echo ""
 echo -e "\033[30;42m Branch to Push: \033[0m"
 read varbranch
 git push -u origin $varbranch
+
+echo "========================"
