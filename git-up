@@ -2,15 +2,15 @@
 
 git add .
 
-echo "commit: "
+echo "Agregar commit: "
 
 read varcommit
 
 #echo It\'s nice to meet you $varcommit
 
-git commit -m "{$varcommit}"
+git commit -m "$varcommit"
 
-echo "Branch: "
+echo "Branch to push: "
 
 read varbranch
 git push -u origin $varbranch 
