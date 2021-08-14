@@ -6,15 +6,11 @@ echo "=============================="
 
 git add .
 
-echo "Agregar Commit: "
-
+echo -e "\e[0;32mAgregar Commit: \e[0m"
 read varcommit
+git commit -m "$varcommit From git-up"
 
-#echo It\'s nice to meet you $varcommit
-
-git commit -m "$varcommit"
 
 echo "Branch to Push: "
-
 read varbranch
 git push -u origin $varbranch 
