@@ -2,7 +2,7 @@
 
 git add .
 
-echo "Agregar commit: "
+echo "Agregar Commit: "
 
 read varcommit
 
@@ -10,9 +10,7 @@ read varcommit
 
 git commit -m "$varcommit"
 
-echo "Branch to push: "
+echo "Branch to Push: "
 
 read varbranch
 git push -u origin $varbranch 
-
-#git add . && git commit -m "test up gitupbash" && git push -u origin 
