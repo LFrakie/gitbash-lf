@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "=============================="
-echo "Agregando todos los cambios"
+echo -e "\e[0;32m Agregando todos los cambios \e[0m"
 echo "=============================="
 
 git add .
