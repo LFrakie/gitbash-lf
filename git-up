@@ -11,6 +11,6 @@ read varcommit
 git commit -m "$varcommit 4-git-up"
 
 
-echo -e "\033[37;42m Branch to Push: \033[0m"
+echo -e "\033[30;42m Branch to Push: \033[0m"
 read varbranch
 git push -u origin $varbranch
