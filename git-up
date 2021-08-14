@@ -1,0 +1,17 @@
+#!/bin/bash
+
+git add .
+
+echo "commit: "
+
+read varcommit
+
+#echo It\'s nice to meet you $varcommit
+
+git commit -m $varcommit
+
+echo "Branch: "
+
+git push -u origin 
+
+#git add . && git commit -m "test up gitupbash" && git push -u origin 
