@@ -8,9 +8,9 @@ git add .
 
 echo -e "\033[37;44m Agregar Commit: \033[0m"
 read varcommit
-git commit -m "$varcommit From git-up"
+git commit -m "$varcommit 4-git-up"
 
 
 echo "\033[37;42m Branch to Push: \033[0m"
 read varbranch
-git push -u origin $varbranch 
+git push -u origin $varbranch
