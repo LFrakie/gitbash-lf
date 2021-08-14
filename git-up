@@ -1,5 +1,9 @@
 #!/bin/bash
 
+echo "=============================="
+echo "Agregando todos los cambios"
+echo "=============================="
+
 git add .
 
 echo "Agregar Commit: "
