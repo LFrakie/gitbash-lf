@@ -18,3 +18,5 @@ read varbranch
 git push -u origin $varbranch
 
 echo "========================"
+
+echo ""
