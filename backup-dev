@@ -1,2 +1,0 @@
-#!/bin/bash
-git add /root/dev/ && git commit -m "Auto Backup - From Cron" && git push -u origin master
