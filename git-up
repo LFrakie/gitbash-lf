@@ -7,7 +7,7 @@ echo "=============================="
 
 git add .
 
-echo -e "\033[37;44m Agregar Commit: \033[0m"
+echo -e "\033[37;44m Commit: \033[0m"
 read varcommit
 git commit -m "$varcommit /git-up"
 
