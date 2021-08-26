@@ -15,6 +15,9 @@ echo ""
 
 echo -e "\033[30;42m Branch to Push: \033[0m"
 read varbranch
+echo "Haciendo Push..."
+
+echo "========================"
 git push -u origin $varbranch
 
 echo "========================"
