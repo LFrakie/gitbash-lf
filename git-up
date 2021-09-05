@@ -13,7 +13,7 @@ git commit -m "$varcommit /git-up"
 
 echo ""
 
-echo -e "\033[30;42m Branch to Push: \033[0m"
+echo -e "\033[30;42m Branch to Push Default is (Press ENTER to Master Push): \033[0m"
 read varbranch
 echo "Haciendo Push..."
 
