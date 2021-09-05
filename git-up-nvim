@@ -1,0 +1,25 @@
+#!/bin/bash
+echo ""
+
+echo "=============================="
+echo  "Agregando todos los cambios"
+echo "=============================="
+
+git add .
+
+echo  "Add Commit:"
+read -p varcommit
+git commit -m "$varcommit /git-up"
+
+echo ""
+
+echo "Branch to Push:"
+read -p varbranch
+echo "Haciendo Push..."
+
+echo "========================"
+git push -u origin $varbranch
+
+echo "========================"
+
+echo ""

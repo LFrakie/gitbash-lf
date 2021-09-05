@@ -1,0 +1,5 @@
+#!/bin/bash
+
+echo -e "\033[37;44m URL: \033[0m"
+git config --get remote.origin.url
+
