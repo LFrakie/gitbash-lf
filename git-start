@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo -e "\033[30;42m Iniciando y añadiendo nuevo repo: \033[0m"
+echo -e "\033[30;42m Iniciando y Añadiendo Nuevo Repo: \033[0m"
 git init && git add .
 
 echo -e "\033[30;42m Repo Create and Conect: \033[0m"
@@ -9,5 +9,5 @@ gh repo create
 echo -e "\033[30;42m Up Ur Code To MASTER Branch \033[0m"
 git commit -m "start and conect project"  && git push -u origin master
 
-echo -e "\033[30;42m Link Del Repositorio \033[0m"
+echo -e "\033[37;44m Link Del Repositorio: \033[0m"
 git config --get remote.origin.url

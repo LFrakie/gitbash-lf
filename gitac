@@ -1,0 +1,74 @@
+#!/bin/bash
+case $1 in
+
+h)
+echo "l = Listar Perfiles | c = Ver Cuenta Actual"
+;;
+
+l)
+echo 1 = "frankwmm (gmail)"
+echo 2 = "frankmwilsonm (upeu)"
+echo 3 = "LFrakie (hmail)"
+;;
+
+c)
+echo
+echo ==================
+echo la cuenta actual es:
+git config user.name
+git config user.email
+echo ==================
+echo
+;;
+
+1)
+echo
+git config --global user.name frankwmm
+git config --global user.email frankwilsonknow@gmail.com
+echo Cambiaste cuenta GIT a frankwmm
+echo Validando...
+echo ==========
+git config user.name
+git config user.email
+echo ==========
+echo
+;;
+
+2)
+echo
+git config --global user.name frankmwilsonm
+git config --global user.email frank.mamani@upeu.edu.pe 
+echo Cambiaste cuenta GIT a frankmwilsonm
+echo Validando...
+echo ==========
+git config user.name
+git config user.email
+echo ==========
+echo
+;;
+
+3)
+echo
+git config --global user.name LFrakie
+git config --global user.email randymas15@hotmail.com
+echo Cambiaste cuenta GIT a LFrakie
+echo Validando...
+echo ==========
+git config user.name
+git config user.email
+echo ==========
+echo
+;;
+
+*)
+echo
+(echo -e "Algo salio mal vuelve a intentar otra opción :c\n"; echo -e "Puedes elegir las siguientes opciones:\n"; echo -e "------------------------\n"; echo -e "l = Listar Perfiles | c = Ver Cuenta Actual | h = Ayuda\n"; echo -e "------------------------\n"; echo -e "1 = frankwmm (gmail)\n"; echo -e "2 = frankmwilsonm (upeu)\n"; echo -e "3 = LFrakie (hmail)") \
+| cowthink -W80
+echo
+
+;;
+esac
+
+
+
+
