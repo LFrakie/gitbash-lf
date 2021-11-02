@@ -1,2 +1,2 @@
 #!/bin/bash
-git add . && git commit -m "test up gitupbash" && git push -u origin
+git add . && git commit -m "wgc / fast up non important commit" && git push -u origin
