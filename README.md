@@ -15,7 +15,7 @@ O tmbn asi:
 ln -s $PWD/git-up
 ```
 
-### MODO 2 (Agregando la carpeta al PATH)
+### MODO 2 (Agregando la carpeta entera con todos los comandos al PATH)
 
 ```bash
 PATH="$PATH:/rutaDondeTenemosNuestro/gitbash-lf"
