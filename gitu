@@ -1,5 +1,15 @@
 #!/bin/bash
+
 git add . && git commit -m "$1" && git push -u origin $2
+
+case $1 in
+
+ )
+echo "l = Listar Perfiles | c = Ver Cuenta Actual"
+;;
+
+esac
+
 
 
 
