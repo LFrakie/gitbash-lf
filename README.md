@@ -1,4 +1,4 @@
-HOLO :B do you need help?
+HOLO, do you need help?
 
 ## INSTALATION
 
