@@ -24,7 +24,6 @@ echo
 git commit -m "$com /gitu-2"
 ;;
 
-
 3)
 echo -----------
 echo "la rama actual es:"
@@ -81,8 +80,14 @@ echo "ayuda?"
 ;;
 
 *)
-git add . && git commit -m "$1 /gitu" && git push -u origin $2
-
+echo Rama Actual de Destino:
+git branch
+echo ----------------
+echo "Commit:"
+read comi
+echo "git add . && git commit -m '$comi /gitu' && git push -u origin $1"
+echo "---------------"
+git add . && git commit -m "$comi /gitu" && git push -u origin $1
 ;;
 esac
 
