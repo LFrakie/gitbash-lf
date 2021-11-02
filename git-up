@@ -4,22 +4,34 @@ echo ""
 echo "=============================="
 echo -e "\e[0;32m Agregando todos los cambios \e[0m"
 echo "=============================="
-
+echo "git add ."
 git add .
+echo ""
 
 echo -e "\033[37;44m Commit: \033[0m"
 read varcommit
+echo
+echo "git commit -m '$varcommit /git-up'"
+echo "================================="
+echo ""
 git commit -m "$varcommit /git-up"
 
 echo ""
 
-echo -e "\033[30;42m Branch to Push Default is (Press ENTER to Master Push): \033[0m"
-read varbranch
-echo "Haciendo Push..."
+echo "========================"
+echo "la rama actual es:"
+git branch
+echo "========================"
 
+echo -e "\033[30;42m ENTER = push a rama actual: \033[0m"
+read varbranch
+echo "git push -u origin $varbranch"
 echo "========================"
 git push -u origin $varbranch
 
-echo "========================"
 
+echo ""
+echo -e "\033[37;44m Link Del Repositorio: \033[0m"
+git config --get remote.origin.url
+echo
 echo ""

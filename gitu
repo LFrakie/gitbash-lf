@@ -2,12 +2,86 @@
 
 case $1 in
 
+0)
+echo "git init"
+echo -------------
+git init
+;;
+
+1)
+echo "git add ."
+echo -------------
+git add .
+;;
+
+2)
+echo "Ingresa commit:"
+read com
+echo --------------------------------
+echo "git commit -m '$com /gitu-2'"
+echo --------------------------------
+echo
+git commit -m "$com /gitu-2"
+;;
+
+
+3)
+echo -----------
+echo "la rama actual es:"
+git branch
+echo -----------
+echo "ENTER = push rama actual:"
+read br
+echo "git push -u origin $br"
+echo --------------------------------
+git push -u origin $br
+;;
+
+#======================================================
+
+12)
+echo "git add ."
+git add .
+echo -------------
+echo "Agregar Commit:"
+read com
+echo --------------------------------
+echo "git commit -m '$com /gitu-12'"
+echo --------------------------------
+echo
+git commit -m "$com /gitu-2"
+;;
+
+
+23)
+echo "git commit"
+echo -------------
+echo "Ingresa commit:"
+read com
+echo --------------------------------
+echo "git commit -m '$com /gitu-23'"
+echo --------------------------------
+echo
+git commit -m "$com /gitu-2"
+
+echo "git push"
+echo -------------
+echo "la rama actual es:"
+git branch
+echo -----------
+echo "ENTER = push rama actual:"
+read br
+echo "git push -u origin $br"
+echo --------------------------------
+git push -u origin $br
+;;
+
 -h)
 echo "ayuda?"
 ;;
 
 *)
-git add . && git commit -m "$1" && git push -u origin $2
+git add . && git commit -m "$1 /gitu" && git push -u origin $2
 
 ;;
 esac
