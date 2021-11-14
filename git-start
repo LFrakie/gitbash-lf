@@ -1,6 +1,30 @@
 #!/bin/bash
+echo "Las cuentas actuales son:"
+
+echo "--- Cuenta - GitHub"
+git config user.name
+git config user.email
+echo =======================
+echo
+
+echo "--- Cuenta GH - CLI"
+gh auth status
+echo =======================
+echo
+
+echo "--- Cuenta - HEROKU CLI"
+heroku whoami
+echo =======================
+echo
+
+
+
+echo "Desea Continuar?(Enter=Yes):"
+read fff
+
 
 echo
+echo "Haciendo git init && git add ."
 echo -e "\033[30;42m Iniciando y Añadiendo Nuevo Repo: \033[0m"
 git init && git add .
 
