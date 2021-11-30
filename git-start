@@ -1,46 +1,32 @@
 #!/bin/bash
-echo "Las cuentas actuales son:"
 
-echo "--- Cuenta - GitHub"
-git config user.name
-git config user.email
-echo =======================
-echo
-
-echo "--- Cuenta GH - CLI"
-gh auth status
-echo =======================
-echo
-
-echo "--- Cuenta - HEROKU CLI"
-heroku whoami
-echo =======================
-echo
-
-
-
-echo "Desea Continuar?(Enter=Yes):"
-read fff
-
-
-echo
-echo "Haciendo git init && git add ."
-echo -e "\033[30;42m Iniciando y Añadiendo Nuevo Repo: \033[0m"
+echo "Step 1 of 6"
+echo -e "\033[30;42m 1) git init && git add . \033[0m"
 git init && git add .
-
 echo
-echo -e "\033[30;42m Repo Create and Conect: \033[0m"
+
+echo "Step 2 of 6"
+echo
+echo -e "\033[30;42m 2) Repo Create and Conect to Repo: \033[0m"
 gh repo create
-
 echo
-echo -e "\033[30;42m Commit Ur Code: \033[0m"
+
+echo "Step 3 of 6"
+echo -e "\033[37;44m 3) Testing conection URL Repo: \033[0m"
+git config --get remote.origin.url
+echo
+
+echo "Step 4 of 6"
+echo -e "\033[30;42m 4) Commit Ur Code: \033[0m"
 git commit -m "start and conect project/git-start"
-
 echo
-echo -e "\033[30;42m Up Ur Code To MASTER Branch \033[0m"
+
+echo "Step 5 of 6"
+echo -e "\033[30;42m 5) Up Ur Code To MASTER Branch default \033[0m"
 git push -u origin master
-
 echo
-echo -e "\033[37;44m Link Del Repositorio: \033[0m"
+
+echo "Step 6 of 6"
+echo -e "\033[37;44m 6) Link Del Repositorio: \033[0m"
 git config --get remote.origin.url
 echo

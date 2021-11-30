@@ -1,0 +1,25 @@
+#!/bin/bash
+echo "Las cuentas actuales 	son:"
+echo "--------------------------"
+echo
+echo -e "\033[37;44m --- Cuenta - GitHub: \033[0m"
+echo "git config user.name && git config user.email"
+echo "----------------------"
+git config user.name
+git config user.email
+echo "=========================="
+echo
+
+echo -e "\033[37;44m --- Cuenta GH - CLI: \033[0m"
+echo "gh auth status"
+echo "----------------------"
+gh auth status
+echo "=========================="
+echo
+
+echo -e "\033[37;44m --- Cuenta - HEROKU CLI: \033[0m"
+echo "heroku whoami"
+echo "----------------------"
+heroku whoami
+echo "=========================="
+echo
