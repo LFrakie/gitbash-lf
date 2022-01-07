@@ -1,6 +1,14 @@
-HOLO, do you need help?
 
 ## INSTALATION
+
+### MODO standar 
+Agregamos la carpeta entera con todos los comandos al PATH.
+
+```bash
+PATH="$PATH:/rutaDondeTenemosNuestro/gitbash-lf"
+export PATH
+```
+------------------------------------------
 
 ### MODO 1  (uno por uno)
 
@@ -15,9 +23,4 @@ O tmbn asi:
 ln -s $PWD/git-up
 ```
 
-### MODO 2 (Agregando la carpeta entera con todos los comandos al PATH)
 
-```bash
-PATH="$PATH:/rutaDondeTenemosNuestro/gitbash-lf"
-export PATH
-```
