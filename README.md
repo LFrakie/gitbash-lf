@@ -1,16 +1,16 @@
+# INSTALATION
 
-## INSTALATION
-
-### MODO standar 
+## MODO standar 
 Agregamos la carpeta entera con todos los comandos al PATH.
 
 ```bash
 PATH="$PATH:/rutaDondeTenemosNuestro/gitbash-lf"
 export PATH
 ```
+
 ------------------------------------------
 
-### MODO 1  (uno por uno)
+## MODO 1  (uno por uno)
 
 Ejemplos:
 ```bash
@@ -22,5 +22,4 @@ O tmbn asi:
 ```bash
 ln -s $PWD/git-up
 ```
-
 
