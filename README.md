@@ -1,6 +1,17 @@
-HOLO, do you need help?
+# INSTALATION
 
-## INSTALATION
+## MODO standar
+Agregamos la carpeta entera con todos los comandos al PATH en nuestro **.bashrc**.
+
+```bash
+PATH="$PATH:$HOME/lift/gitbash-lf"
+export PATH
+```
+
+Ejem: 
+
+PATH="$PATH:/rutaDondeTenemosNuestro/gitbash-lf"
+export PATH
 
 ### MODO 1  (uno por uno)
 
