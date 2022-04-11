@@ -13,7 +13,9 @@ Ejem:
 PATH="$PATH:/rutaDondeTenemosNuestro/gitbash-lf"
 export PATH
 
-### MODO 1  (uno por uno)
+--------------
+
+### Otro MODO  (uno por uno)
 
 Ejemplos:
 ```bash
@@ -26,9 +28,4 @@ O tmbn asi:
 ln -s $PWD/git-up
 ```
 
-### MODO 2 (Agregando la carpeta entera con todos los comandos al PATH)
 
-```bash
-PATH="$PATH:/rutaDondeTenemosNuestro/gitbash-lf"
-export PATH
-```
